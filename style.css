@@ -1,0 +1,175 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+    padding: 1.8% 9%;
+}
+
+li, .logIn {
+    display: inline;
+}
+
+li {
+    color: #989D9C;
+    font-weight: 600;
+    font-size: 1.2em;
+    margin-right: 17px;
+    cursor: pointer;
+}
+
+.logIn {
+    width: 7vw;
+    height: 41px;
+    background: #665AE1;
+    border-radius: 20.5px;
+    color: #FFFFFF;
+    font-size: 1vw;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.logIn:hover {
+    background-color: #4967E0;
+    transition: 2s;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8% 7%;
+}
+
+.image {
+    width: 45%;
+    padding-right: 50%;
+}
+
+img {
+    width: 35vw;
+    animation: imageOn 2.5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+
+
+.content {
+    flex-direction: column;
+    justify-content: start;
+    width: 45%;
+}
+
+h1 {
+    font-weight: 900;
+    font-size: 2.5vw;
+    color: #515151;
+}
+
+h2 {
+    font-weight: 500;
+    font-size: 1.5vw;
+    color: #515151;
+}
+
+p {
+    font-weight: 400;
+    font-size: 1vw;
+    color: #848484;
+}
+
+.explore {
+    background: #ADFF00;
+    border-radius: 20.5px;
+    width: 8.6vw;
+    height: 50px;
+    font-weight: 700;
+    font-size: 1vw;
+    color: #000000;
+    cursor: pointer;
+    outline: none;
+    border: none;
+    margin-top: 8%;
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.explore:hover {
+    background-color: #E9FF4E;
+    transition: 2s;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+@media screen and (max-width: 900px) {
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    nav {
+        display: none;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+    }
+
+    .image {
+        width: 70%;
+    }
+
+    img {
+        justify-items: center;
+        width: 40vw;
+    }
+
+    .content {
+        margin-top: 5%;
+        width: 70%;
+    }
+
+    h1 {
+        text-align: center;
+        font-size: 3vw;
+    }
+
+    h2 {
+        margin-top: 1%;
+        text-align: center;
+    }
+
+    p {
+        margin-top: 1%;
+        text-align: center;
+        font-size: 1.5vw;
+    }
+.box-button {
+    align-items: center;
+    justify-content: center;
+}
+    .explore {
+        width: 130px;
+        height: 30px;
+        font-size: 2vw;
+    }
+
+
+}
+
+@keyframes imageOn {
+    from {
+        transform: translate(10px, 10px);
+    }
+}
